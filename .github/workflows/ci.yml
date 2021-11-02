@@ -3,22 +3,22 @@
 
 name: Java CI with Gradle
 
-on:
-  push:
+on: # which events the pipeline 
+  push: # pushing the master branch
     branches: [ master ]
-  pull_request:
+  pull_request: # pull request from the master branch
     branches: [ master ]
 
 jobs:
-  build-java:
+  build-java: # job name
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # OS
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2 # pull repository                                                           
 
     - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
+      uses: actions/setup-java@v1 # install java env
       with:
         java-version: 1.8
 
