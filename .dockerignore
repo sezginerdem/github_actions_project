@@ -1,3 +1,2 @@
 # ignore or exclude build directory
-*/build*
-*/*/build*
+build/libs/my-app-1.0-SNAPSHOT.jar
