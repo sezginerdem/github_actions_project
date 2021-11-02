@@ -12,7 +12,7 @@ on: # which events the pipeline
 jobs:
   build-java: # job name
 
-    runs-on: ubuntu-latest # OS
+    runs-on: ubuntu-latest # OS 
     
     steps:
     - uses: actions/checkout@v2 # pull repository                                                           
