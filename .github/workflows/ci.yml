@@ -5,9 +5,9 @@ name: Java CI with Gradle
 
 on: # which events the pipeline 
   push: # pushing the master branch
-    branches: [ master ]
+    branches: [ main ]
   pull_request: # pull request from the master branch
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build-java: # job name
