@@ -12,7 +12,7 @@ on: # which events the pipeline
 jobs:
   build-java: # job name
 
-    runs-on: ubuntu-latest # OS
+    runs-on: macOS-latest # OS 
     
     steps:
     - uses: actions/checkout@v2 # pull repository                                                           
@@ -27,12 +27,23 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
+      
+    - uses: docker-practice/actions-setup-docker@master
+    - run: set -x
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
+<<<<<<< HEAD
         image: nanajanashia/demo-app
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
          
+=======
+        image: drerdemsezgin/flask-app
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+       
+>>>>>>> e7a63378fecaec2bae58e0232129ca3a8b29f965
