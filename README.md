@@ -1,11 +1,3 @@
-##### build the project
+You can reach these repo details on my Medium article:
 
-    ./gradlew build
-
-##### build Docker image called java-app. Execute from root
-
-    docker build -t java-app .
-    
-##### push image to repo 
-
-    docker tag java-app demo-app:java-1.0
+https://serdem.medium.com/how-can-you-build-your-docker-image-on-macos-with-github-actions-ci-pipeline-75ec9ad16057
