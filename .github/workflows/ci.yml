@@ -3,7 +3,7 @@
 
 name: Java CI with Gradle On MacOS
 
-on: # which events the pipeline 
+on: # which events trigger the pipeline 
   push: # pushing the master branch
     branches: [ main ]
   pull_request: # pull request from the master branch
